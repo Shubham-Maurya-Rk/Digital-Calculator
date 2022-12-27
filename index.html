@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caculator</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="top">
+            <h3 class="heading">Shubham's Calculator</h3>
+            <input type="color" oninput=OnInput() id="cont_color" value="#0B7FC2">
+        </div>
+        <input type="text" id="input" disabled style="background-color:rgba(0,0,0,0.4);"> 
+        <div class="button">
+           <div class="num-cont cont-sizing">
+               <button class="btns" id="7" onclick=Clicked(this.id)>7</button>
+               <button class="btns" id="8" onclick=Clicked(this.id)>8</button>
+               <button class="btns" id="9" onclick=Clicked(this.id)>9</button>
+               <button class="btns" id="4" onclick=Clicked(this.id)>4</button>
+               <button class="btns" id="5" onclick=Clicked(this.id)>5</button>
+               <button class="btns" id="6" onclick=Clicked(this.id)>6</button>
+               <button class="btns" id="1" onclick=Clicked(this.id)>1</button>
+               <button class="btns" id="2" onclick=Clicked(this.id)>2</button>
+               <button class="btns" id="3" onclick=Clicked(this.id)>3</button>
+               <button class="btns" id="plusOrMinus" style="font-size: 25px;">+/-</button>
+               <button class="btns" id="0" onclick=Clicked(this.id)>0</button>
+               <button class="btns" id="dot" style="font-size: 40px;" onclick=Clicked(this.id)>.</button>
+           </div>
+<!-- let All=[0,1,2,3,4,5,6,7,8,9,"+","-","*","/","%","(",")","^",".","e(","log(","√(","sin(","cos(","π(","!("]; -->
+
+           <div class="opt-cont cont-sizing">
+            <button class="opt-btns bolding" id="plus" onclick=Clicked(this.id)>+</button>
+            <button class="opt-btns bolding" id="o_brac" onclick=Clicked(this.id)>(</button>
+            <button class="opt-btns bolding" id="c_brac" onclick=Clicked(this.id)>)</button>
+            <button class="opt-btns bolding" id="minus" onclick=Clicked(this.id)>-</button>
+            <button class="opt-btns" id="power" onclick=Clicked(this.id)>^</button>
+            <button class="opt-btns" id="expo" onclick=Clicked(this.id)>e<sup>x</sup></button>
+            <button class="opt-btns bolding" id="multiply" onclick=Clicked(this.id)>*</button>
+            <button class="opt-btns" id="log" onclick=Clicked(this.id)>log</button>
+            <button class="opt-btns bolding" id="sqrt" onclick=Clicked(this.id)>&Sqrt;</button> 
+            <button class="opt-btns bolding" id="divide" onclick=Clicked(this.id)>/</button>
+            <button class="opt-btns" id="sin" onclick=Clicked(this.id)>sin</button>
+            <button class="opt-btns" id="cos" onclick=Clicked(this.id)>cos</button> 
+            <button class="opt-btns" id="mod" onclick=Clicked(this.id)>%</button>
+            <button class="opt-btns" id="pi" onclick=Clicked(this.id)>&pi;</button>
+            <button class="opt-btns" id="factorial" onclick=Clicked(this.id)>x!</button> 
+           </div>
+           <div class="func-cont">
+            <button class="func-btns" id="AC" onclick=Clicked(this.id)>All Cancel</button>
+            <button class="func-btns" id="C" onclick=Clicked(this.id)>Cancel</button>
+            <button class="func-btns" id="start" onclick=Clicked(this.id)>Start</button>
+            <button class="func-btns" id="Close" onclick=Clicked(this.id)>Close</button>
+            <button class="func-btns" id="ans" onclick=calculate(this.id)>=</button>
+           </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
